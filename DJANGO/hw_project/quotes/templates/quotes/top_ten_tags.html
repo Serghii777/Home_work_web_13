@@ -1,0 +1,14 @@
+
+
+{% block top_ten_tags %}
+<div class="col-md-4 tags-box">
+        
+    <h2>Top Ten tags</h2>
+    
+    <ul> <span class="top-tags">
+        {% for tag in top_tags %}
+             <a class="tag" style="font-size: 28px" href="/tag/{{ tag.id }}">{{ tag.name }}</a>
+         {% endfor %}
+        </span>
+</div>
+{% endblock %}
